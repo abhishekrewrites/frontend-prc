@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "items": [
+    {
+      "name": "1 child",
+      "items": [],
+      "id": 2,
+      "isFolder": false
+    },
+    {
+      "name": "2 child",
+      "items": [
+        {
+          "name": "2.1 child",
+          "items": [],
+          "id": 4,
+          "isFolder": true
+        }
+      ],
+      "id": 3,
+      "isFolder": true
+    }
+  ],
+  "isFolder": true,
+  "id": 1
+}
