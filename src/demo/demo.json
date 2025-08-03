@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "root",
+    "id": 1,
+    "parent": null,
+    "isFolder": true,
+    "children": [2, 3]
+  },
+  "2": {
+    "name": "utility.js",
+    "id": 2,
+    "parent": 1,
+    "isFolder": false,
+    "children": []
+  },
+  "3": {
+    "name": "hooks",
+    "id": 3,
+    "parent": 1,
+    "isFolder": true,
+    "children": [4, 5]
+  },
+  "4": {
+    "name": "env",
+    "id": 4,
+    "parent": 3,
+    "isFolder": false,
+    "children": []
+  },
+  "5": {
+    "name": "store",
+    "id": 5,
+    "parent": 3,
+    "isFolder": true,
+    "children": []
+  }
+}

@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Pagination from "./Pagination/Pagination.jsx";
 import Tree from "./Tree/Tree.jsx";
+import TreeExp from "./demo/TreeExp.jsx";
 import JsonViewer from "./JsonViewer";
 import Appt from "./rahul-tree/app.jsx";
 import Apt from "./multi-step-form/";
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="rahul-tree" element={<Appt />} />
         <Route path="multi-step-form" element={<Apt />} />
         <Route path="queue-progress-bar" element={<QueueProgressBar />} />
+        <Route path="tree-exp" element={<TreeExp />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>

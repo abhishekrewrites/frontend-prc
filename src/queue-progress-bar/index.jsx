@@ -17,13 +17,11 @@ const SequentialProgressBars = () => {
     const newTotal = totalBars + 1;
     setTotalBars(newTotal);
 
-    // Start animating the first bar if none is currently animating
     if (currentAnimating === 0) {
       setCurrentAnimating(newTotal); //
     }
   };
 
-  // Start animation for current bar using useRef
   useEffect(() => {
     if (currentAnimating > 0 && currentAnimating <= totalBars) {
       const timer = setTimeout(() => {
@@ -41,11 +39,10 @@ const SequentialProgressBars = () => {
     if (barId < totalBars) {
       setCurrentAnimating(barId + 1);
     } else {
-      setCurrentAnimating(0); // All done
+      setCurrentAnimating(0);
     }
   };
 
-  // Generate array of bar numbers
   const bars = Array.from({ length: totalBars }, (_, i) => i + 1);
 
   return (

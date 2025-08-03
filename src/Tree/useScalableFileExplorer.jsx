@@ -32,12 +32,9 @@ const useScalableFileExplorer = (initialTree) => {
 
     setNodes((prevNodes) => {
       const newNodes = { ...prevNodes };
-
       newNodes[newNodeId] = newNode;
-
       const parentNode = { ...newNodes[folderId] };
       parentNode.children = [newNodeId, ...parentNode.children];
-
       newNodes[folderId] = parentNode;
 
       return newNodes;
