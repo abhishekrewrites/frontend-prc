@@ -8,6 +8,7 @@ import Tree from "./Tree/Tree.jsx";
 import JsonViewer from "./JsonViewer";
 import Appt from "./rahul-tree/app.jsx";
 import Apt from "./multi-step-form/";
+import QueueProgressBar from "./queue-progress-bar/";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="json-viewer" element={<JsonViewer />} />
         <Route path="rahul-tree" element={<Appt />} />
         <Route path="multi-step-form" element={<Apt />} />
+        <Route path="queue-progress-bar" element={<QueueProgressBar />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>
