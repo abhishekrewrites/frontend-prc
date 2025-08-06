@@ -10,6 +10,8 @@ import JsonViewer from "./JsonViewer";
 import Appt from "./rahul-tree/app.jsx";
 import Apt from "./multi-step-form/";
 import QueueProgressBar from "./queue-progress-bar/";
+import TodoList from "./todo-list";
+import ShoppingCart from "./shopping-cart";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -23,6 +25,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="multi-step-form" element={<Apt />} />
         <Route path="queue-progress-bar" element={<QueueProgressBar />} />
         <Route path="tree-exp" element={<TreeExp />} />
+        <Route path="todo-list" element={<TodoList />} />
+        <Route path="shopping" element={<ShoppingCart />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>
