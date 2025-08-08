@@ -12,6 +12,7 @@ import Apt from "./multi-step-form/";
 import QueueProgressBar from "./queue-progress-bar/";
 import TodoList from "./todo-list";
 import ShoppingCart from "./shopping-cart";
+import Wrapper from "./data-table/";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -27,6 +28,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="tree-exp" element={<TreeExp />} />
         <Route path="todo-list" element={<TodoList />} />
         <Route path="shopping" element={<ShoppingCart />} />
+        <Route path="data-table" element={<Wrapper />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>

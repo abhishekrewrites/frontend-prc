@@ -16,7 +16,7 @@ function TodoList() {
       }
     },
     [addItems]
-  ); // ✅ Added missing dependency
+  );
 
   const filteredIds = useMemo(() => {
     if (!itemsId.length || items.size === 0) return [];
@@ -29,70 +29,6 @@ function TodoList() {
 
     return gg;
   }, [itemsId, items, filter]);
-
-  const handleDragStart = useCallback((e, index) => {
-    setDraggedIndex(index);
-    e.dataTransfer.setData("text/plain", index.toString());
-    e.dataTransfer.effectAllowed = "move";
-  }, []);
-
-  const handleDragOver = useCallback((e) => {
-    e.preventDefault(); // Allow drop
-    e.dataTransfer.dropEffect = "move";
-  }, []);
-
-  const handleDrop = useCallback(
-    (e, dropIndex) => {
-      e.preventDefault();
-      const dragIndex = parseInt(e.dataTransfer.getData("text/plain"));
-
-      if (dragIndex !== dropIndex && dragIndex !== null) {
-        console.log(
-          `Dropped item from index ${dragIndex} to index ${dropIndex}`
-        );
-
-        // Reorder the filtered items
-        const newFilteredIds = Array.from(filteredIds);
-        const [draggedItem] = newFilteredIds.splice(dragIndex, 1);
-        newFilteredIds.splice(dropIndex, 0, draggedItem);
-
-        // Update the main itemsId array to reflect the new order
-        // This is more complex when filtering is involved
-        reorderFilteredItems(dragIndex, dropIndex);
-      }
-
-      setDraggedIndex(null);
-    },
-    [filteredIds, reorderItems]
-  );
-
-  const reorderFilteredItems = (sourceIndex, destinationIndex) => {
-    // Create a new order based on filtered items
-    const newFilteredIds = Array.from(filteredIds);
-    const [draggedItem] = newFilteredIds.splice(sourceIndex, 1);
-    newFilteredIds.splice(destinationIndex, 0, draggedItem);
-
-    // Find the positions in the original itemsId array
-    const newItemsId = itemsId.map((id) => {
-      const filteredIndex = newFilteredIds.indexOf(id);
-      return filteredIndex !== -1
-        ? { id, order: filteredIndex }
-        : { id, order: Infinity };
-    });
-
-    // Sort to maintain the new order while keeping non-filtered items in place
-    newItemsId.sort((a, b) => {
-      if (a.order === Infinity && b.order === Infinity) return 0;
-      if (a.order === Infinity) return 1;
-      if (b.order === Infinity) return -1;
-      return a.order - b.order;
-    });
-
-    // Update the state (you'll need to add this to your utility hook)
-    const reorderedIds = newItemsId.map((item) => item.id);
-    // For now, let's use a simpler approach
-    reorderItems(sourceIndex, destinationIndex);
-  };
 
   return (
     <div className="flex flex-col justify-center items-center mt-4">
@@ -123,10 +59,6 @@ function TodoList() {
             index={idx}
             handleDelete={deleteItems}
             editItems={editItems}
-            onDragStart={handleDragStart}
-            onDragOver={handleDragOver}
-            onDrop={handleDrop}
-            isDragging={draggedIndex === idx}
           />
         ))}
       </div>
@@ -136,17 +68,7 @@ function TodoList() {
 
 export default TodoList;
 
-function Notes({
-  currentItemId,
-  allItems,
-  handleDelete,
-  editItems,
-  index,
-  onDragStart,
-  onDragOver,
-  onDrop,
-  isDragging,
-}) {
+function Notes({ currentItemId, allItems, handleDelete, editItems, index }) {
   const currentItem = allItems.get(currentItemId);
 
   if (!currentItem) return null;

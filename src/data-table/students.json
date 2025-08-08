@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "name": "Kiara Patel",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 82,
+      "Science": 45,
+      "English": 85,
+      "History": 70,
+      "Computer": 55
+    }
+  },
+  {
+    "id": 2,
+    "name": "Kabir Kapoor",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 81,
+      "Science": 55,
+      "English": 96,
+      "History": 81,
+      "Computer": 82
+    }
+  },
+  {
+    "id": 3,
+    "name": "Vivaan Joshi",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 48,
+      "Science": 99,
+      "English": 95,
+      "History": 46,
+      "Computer": 64
+    }
+  },
+  {
+    "id": 4,
+    "name": "Myra Joshi",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 80,
+      "Science": 89,
+      "English": 90,
+      "History": 42,
+      "Computer": 67
+    }
+  },
+  {
+    "id": 5,
+    "name": "Aarav Mehta",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 87,
+      "Science": 95,
+      "English": 75,
+      "History": 50,
+      "Computer": 47
+    }
+  },
+  {
+    "id": 6,
+    "name": "Aisha Gupta",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 53,
+      "Science": 87,
+      "English": 91,
+      "History": 77,
+      "Computer": 80
+    }
+  },
+  {
+    "id": 7,
+    "name": "Vivaan Patel",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 63,
+      "Science": 72,
+      "English": 88,
+      "History": 52,
+      "Computer": 99
+    }
+  },
+  {
+    "id": 8,
+    "name": "Vivaan Nair",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 92,
+      "Science": 82,
+      "English": 78,
+      "History": 75,
+      "Computer": 88
+    }
+  },
+  {
+    "id": 9,
+    "name": "Aisha Nair",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 74,
+      "Science": 71,
+      "English": 64,
+      "History": 72,
+      "Computer": 49
+    }
+  },
+  {
+    "id": 10,
+    "name": "Anaya Patel",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 57,
+      "Science": 99,
+      "English": 52,
+      "History": 78,
+      "Computer": 58
+    }
+  },
+  {
+    "id": 11,
+    "name": "Anaya Khan",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 53,
+      "Science": 68,
+      "English": 52,
+      "History": 55,
+      "Computer": 61
+    }
+  },
+  {
+    "id": 12,
+    "name": "Kabir Mehta",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 80,
+      "Science": 66,
+      "English": 43,
+      "History": 74,
+      "Computer": 61
+    }
+  },
+  {
+    "id": 13,
+    "name": "Vivaan Kapoor",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 56,
+      "Science": 76,
+      "English": 84,
+      "History": 73,
+      "Computer": 89
+    }
+  },
+  {
+    "id": 14,
+    "name": "Diya Chopra",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 93,
+      "Science": 84,
+      "English": 94,
+      "History": 83,
+      "Computer": 80
+    }
+  },
+  {
+    "id": 15,
+    "name": "Kabir Mehta",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 84,
+      "Science": 69,
+      "English": 69,
+      "History": 78,
+      "Computer": 89
+    }
+  },
+  {
+    "id": 16,
+    "name": "Vivaan Khan",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 69,
+      "Science": 74,
+      "English": 45,
+      "History": 44,
+      "Computer": 52
+    }
+  },
+  {
+    "id": 17,
+    "name": "Aisha Kapoor",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 95,
+      "Science": 73,
+      "English": 48,
+      "History": 44,
+      "Computer": 43
+    }
+  },
+  {
+    "id": 18,
+    "name": "Anaya Mehta",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 54,
+      "Science": 57,
+      "English": 45,
+      "History": 90,
+      "Computer": 42
+    }
+  },
+  {
+    "id": 19,
+    "name": "Aarav Kapoor",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 94,
+      "Science": 65,
+      "English": 96,
+      "History": 71,
+      "Computer": 93
+    }
+  },
+  {
+    "id": 20,
+    "name": "Vivaan Nair",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 88,
+      "Science": 79,
+      "English": 77,
+      "History": 94,
+      "Computer": 78
+    }
+  },
+  {
+    "id": 21,
+    "name": "Kabir Khan",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 44,
+      "Science": 51,
+      "English": 80,
+      "History": 65,
+      "Computer": 94
+    }
+  },
+  {
+    "id": 22,
+    "name": "Anaya Mehta",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 96,
+      "Science": 92,
+      "English": 60,
+      "History": 82,
+      "Computer": 93
+    }
+  },
+  {
+    "id": 23,
+    "name": "Reyansh Gupta",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 100,
+      "Science": 86,
+      "English": 87,
+      "History": 48,
+      "Computer": 97
+    }
+  },
+  {
+    "id": 24,
+    "name": "Kabir Joshi",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 94,
+      "Science": 68,
+      "English": 42,
+      "History": 69,
+      "Computer": 69
+    }
+  },
+  {
+    "id": 25,
+    "name": "Vivaan Sharma",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 47,
+      "Science": 45,
+      "English": 54,
+      "History": 87,
+      "Computer": 74
+    }
+  },
+  {
+    "id": 26,
+    "name": "Aisha Patel",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 65,
+      "Science": 66,
+      "English": 67,
+      "History": 45,
+      "Computer": 60
+    }
+  },
+  {
+    "id": 27,
+    "name": "Kiara Khan",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 48,
+      "Science": 71,
+      "English": 59,
+      "History": 77,
+      "Computer": 94
+    }
+  },
+  {
+    "id": 28,
+    "name": "Reyansh Nair",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 71,
+      "Science": 92,
+      "English": 83,
+      "History": 49,
+      "Computer": 71
+    }
+  },
+  {
+    "id": 29,
+    "name": "Diya Nair",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 88,
+      "Science": 51,
+      "English": 53,
+      "History": 82,
+      "Computer": 92
+    }
+  },
+  {
+    "id": 30,
+    "name": "Vivaan Patel",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 96,
+      "Science": 82,
+      "English": 70,
+      "History": 86,
+      "Computer": 51
+    }
+  },
+  {
+    "id": 31,
+    "name": "Kabir Reddy",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 90,
+      "Science": 55,
+      "English": 51,
+      "History": 81,
+      "Computer": 46
+    }
+  },
+  {
+    "id": 32,
+    "name": "Reyansh Gupta",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 62,
+      "Science": 51,
+      "English": 97,
+      "History": 41,
+      "Computer": 57
+    }
+  },
+  {
+    "id": 33,
+    "name": "Anaya Patel",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 93,
+      "Science": 95,
+      "English": 65,
+      "History": 49,
+      "Computer": 63
+    }
+  },
+  {
+    "id": 34,
+    "name": "Vivaan Gupta",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 77,
+      "Science": 95,
+      "English": 94,
+      "History": 78,
+      "Computer": 74
+    }
+  },
+  {
+    "id": 35,
+    "name": "Kabir Patel",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 82,
+      "Science": 78,
+      "English": 87,
+      "History": 82,
+      "Computer": 88
+    }
+  },
+  {
+    "id": 36,
+    "name": "Kabir Patel",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 85,
+      "Science": 45,
+      "English": 78,
+      "History": 68,
+      "Computer": 55
+    }
+  },
+  {
+    "id": 37,
+    "name": "Kiara Chopra",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 75,
+      "Science": 54,
+      "English": 98,
+      "History": 43,
+      "Computer": 100
+    }
+  },
+  {
+    "id": 38,
+    "name": "Anaya Nair",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 45,
+      "Science": 100,
+      "English": 70,
+      "History": 84,
+      "Computer": 44
+    }
+  },
+  {
+    "id": 39,
+    "name": "Kiara Mehta",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 62,
+      "Science": 68,
+      "English": 78,
+      "History": 92,
+      "Computer": 41
+    }
+  },
+  {
+    "id": 40,
+    "name": "Kabir Kapoor",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 67,
+      "Science": 42,
+      "English": 52,
+      "History": 90,
+      "Computer": 94
+    }
+  },
+  {
+    "id": 41,
+    "name": "Myra Gupta",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 87,
+      "Science": 97,
+      "English": 80,
+      "History": 56,
+      "Computer": 41
+    }
+  },
+  {
+    "id": 42,
+    "name": "Reyansh Joshi",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 63,
+      "Science": 83,
+      "English": 83,
+      "History": 60,
+      "Computer": 49
+    }
+  },
+  {
+    "id": 43,
+    "name": "Aarav Patel",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 73,
+      "Science": 70,
+      "English": 50,
+      "History": 50,
+      "Computer": 52
+    }
+  },
+  {
+    "id": 44,
+    "name": "Aisha Joshi",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 52,
+      "Science": 65,
+      "English": 87,
+      "History": 73,
+      "Computer": 42
+    }
+  },
+  {
+    "id": 45,
+    "name": "Aisha Kapoor",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 52,
+      "Science": 81,
+      "English": 77,
+      "History": 88,
+      "Computer": 88
+    }
+  },
+  {
+    "id": 46,
+    "name": "Ishaan Mehta",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 85,
+      "Science": 94,
+      "English": 44,
+      "History": 74,
+      "Computer": 96
+    }
+  },
+  {
+    "id": 47,
+    "name": "Kiara Sharma",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 59,
+      "Science": 58,
+      "English": 71,
+      "History": 72,
+      "Computer": 44
+    }
+  },
+  {
+    "id": 48,
+    "name": "Diya Chopra",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 78,
+      "Science": 80,
+      "English": 94,
+      "History": 40,
+      "Computer": 76
+    }
+  },
+  {
+    "id": 49,
+    "name": "Ishaan Sharma",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 66,
+      "Science": 79,
+      "English": 46,
+      "History": 66,
+      "Computer": 83
+    }
+  },
+  {
+    "id": 50,
+    "name": "Vivaan Reddy",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 50,
+      "Science": 45,
+      "English": 80,
+      "History": 89,
+      "Computer": 62
+    }
+  },
+  {
+    "id": 51,
+    "name": "Diya Joshi",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 98,
+      "Science": 87,
+      "English": 55,
+      "History": 65,
+      "Computer": 82
+    }
+  },
+  {
+    "id": 52,
+    "name": "Vivaan Khan",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 71,
+      "Science": 73,
+      "English": 81,
+      "History": 48,
+      "Computer": 68
+    }
+  },
+  {
+    "id": 53,
+    "name": "Aisha Nair",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 84,
+      "Science": 92,
+      "English": 93,
+      "History": 76,
+      "Computer": 52
+    }
+  },
+  {
+    "id": 54,
+    "name": "Aisha Mehta",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 94,
+      "Science": 85,
+      "English": 87,
+      "History": 52,
+      "Computer": 89
+    }
+  },
+  {
+    "id": 55,
+    "name": "Diya Gupta",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 42,
+      "Science": 52,
+      "English": 50,
+      "History": 70,
+      "Computer": 72
+    }
+  },
+  {
+    "id": 56,
+    "name": "Aisha Joshi",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 62,
+      "Science": 44,
+      "English": 60,
+      "History": 95,
+      "Computer": 83
+    }
+  },
+  {
+    "id": 57,
+    "name": "Aarav Joshi",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 48,
+      "Science": 47,
+      "English": 100,
+      "History": 40,
+      "Computer": 86
+    }
+  },
+  {
+    "id": 58,
+    "name": "Kabir Khan",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 47,
+      "Science": 68,
+      "English": 42,
+      "History": 98,
+      "Computer": 41
+    }
+  },
+  {
+    "id": 59,
+    "name": "Anaya Patel",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 72,
+      "Science": 78,
+      "English": 57,
+      "History": 43,
+      "Computer": 81
+    }
+  },
+  {
+    "id": 60,
+    "name": "Aisha Kapoor",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 61,
+      "Science": 82,
+      "English": 79,
+      "History": 47,
+      "Computer": 83
+    }
+  },
+  {
+    "id": 61,
+    "name": "Diya Kapoor",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 69,
+      "Science": 90,
+      "English": 54,
+      "History": 55,
+      "Computer": 67
+    }
+  },
+  {
+    "id": 62,
+    "name": "Aisha Nair",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 45,
+      "Science": 69,
+      "English": 42,
+      "History": 64,
+      "Computer": 50
+    }
+  },
+  {
+    "id": 63,
+    "name": "Anaya Patel",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 62,
+      "Science": 49,
+      "English": 69,
+      "History": 84,
+      "Computer": 52
+    }
+  },
+  {
+    "id": 64,
+    "name": "Kabir Sharma",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 40,
+      "Science": 47,
+      "English": 51,
+      "History": 56,
+      "Computer": 71
+    }
+  },
+  {
+    "id": 65,
+    "name": "Vivaan Patel",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 70,
+      "Science": 95,
+      "English": 65,
+      "History": 93,
+      "Computer": 65
+    }
+  },
+  {
+    "id": 66,
+    "name": "Ishaan Mehta",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 70,
+      "Science": 84,
+      "English": 64,
+      "History": 74,
+      "Computer": 70
+    }
+  },
+  {
+    "id": 67,
+    "name": "Aisha Kapoor",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 53,
+      "Science": 42,
+      "English": 41,
+      "History": 88,
+      "Computer": 76
+    }
+  },
+  {
+    "id": 68,
+    "name": "Kabir Khan",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 90,
+      "Science": 85,
+      "English": 49,
+      "History": 76,
+      "Computer": 83
+    }
+  },
+  {
+    "id": 69,
+    "name": "Vivaan Joshi",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 66,
+      "Science": 82,
+      "English": 85,
+      "History": 73,
+      "Computer": 91
+    }
+  },
+  {
+    "id": 70,
+    "name": "Reyansh Reddy",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 97,
+      "Science": 98,
+      "English": 83,
+      "History": 70,
+      "Computer": 61
+    }
+  },
+  {
+    "id": 71,
+    "name": "Myra Reddy",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 44,
+      "Science": 57,
+      "English": 84,
+      "History": 79,
+      "Computer": 82
+    }
+  },
+  {
+    "id": 72,
+    "name": "Kiara Chopra",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 64,
+      "Science": 88,
+      "English": 57,
+      "History": 99,
+      "Computer": 100
+    }
+  },
+  {
+    "id": 73,
+    "name": "Kabir Sharma",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 42,
+      "Science": 99,
+      "English": 65,
+      "History": 85,
+      "Computer": 52
+    }
+  },
+  {
+    "id": 74,
+    "name": "Myra Sharma",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 41,
+      "Science": 54,
+      "English": 71,
+      "History": 66,
+      "Computer": 73
+    }
+  },
+  {
+    "id": 75,
+    "name": "Vivaan Chopra",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 82,
+      "Science": 65,
+      "English": 70,
+      "History": 64,
+      "Computer": 57
+    }
+  },
+  {
+    "id": 76,
+    "name": "Anaya Kapoor",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 48,
+      "Science": 80,
+      "English": 69,
+      "History": 78,
+      "Computer": 74
+    }
+  },
+  {
+    "id": 77,
+    "name": "Vivaan Kapoor",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 68,
+      "Science": 64,
+      "English": 83,
+      "History": 69,
+      "Computer": 92
+    }
+  },
+  {
+    "id": 78,
+    "name": "Aisha Kapoor",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 61,
+      "Science": 72,
+      "English": 61,
+      "History": 40,
+      "Computer": 81
+    }
+  },
+  {
+    "id": 79,
+    "name": "Myra Reddy",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 64,
+      "Science": 59,
+      "English": 91,
+      "History": 71,
+      "Computer": 53
+    }
+  },
+  {
+    "id": 80,
+    "name": "Aarav Joshi",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 69,
+      "Science": 84,
+      "English": 50,
+      "History": 89,
+      "Computer": 96
+    }
+  },
+  {
+    "id": 81,
+    "name": "Diya Khan",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 57,
+      "Science": 77,
+      "English": 79,
+      "History": 99,
+      "Computer": 93
+    }
+  },
+  {
+    "id": 82,
+    "name": "Anaya Kapoor",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 98,
+      "Science": 52,
+      "English": 66,
+      "History": 45,
+      "Computer": 78
+    }
+  },
+  {
+    "id": 83,
+    "name": "Ishaan Kapoor",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 84,
+      "Science": 76,
+      "English": 63,
+      "History": 48,
+      "Computer": 67
+    }
+  },
+  {
+    "id": 84,
+    "name": "Aisha Mehta",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 56,
+      "Science": 51,
+      "English": 89,
+      "History": 78,
+      "Computer": 85
+    }
+  },
+  {
+    "id": 85,
+    "name": "Diya Chopra",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 84,
+      "Science": 71,
+      "English": 54,
+      "History": 67,
+      "Computer": 73
+    }
+  },
+  {
+    "id": 86,
+    "name": "Aarav Gupta",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 49,
+      "Science": 55,
+      "English": 47,
+      "History": 56,
+      "Computer": 60
+    }
+  },
+  {
+    "id": 87,
+    "name": "Diya Sharma",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 87,
+      "Science": 82,
+      "English": 85,
+      "History": 45,
+      "Computer": 53
+    }
+  },
+  {
+    "id": 88,
+    "name": "Aarav Sharma",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 59,
+      "Science": 71,
+      "English": 93,
+      "History": 61,
+      "Computer": 83
+    }
+  },
+  {
+    "id": 89,
+    "name": "Kabir Sharma",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 69,
+      "Science": 79,
+      "English": 57,
+      "History": 68,
+      "Computer": 43
+    }
+  },
+  {
+    "id": 90,
+    "name": "Kiara Joshi",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 85,
+      "Science": 57,
+      "English": 47,
+      "History": 73,
+      "Computer": 79
+    }
+  },
+  {
+    "id": 91,
+    "name": "Aisha Kapoor",
+    "gender": "Female",
+    "age": 16,
+    "marks": {
+      "Math": 44,
+      "Science": 94,
+      "English": 41,
+      "History": 51,
+      "Computer": 82
+    }
+  },
+  {
+    "id": 92,
+    "name": "Anaya Khan",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 47,
+      "Science": 54,
+      "English": 71,
+      "History": 94,
+      "Computer": 93
+    }
+  },
+  {
+    "id": 93,
+    "name": "Aisha Gupta",
+    "gender": "Male",
+    "age": 15,
+    "marks": {
+      "Math": 88,
+      "Science": 40,
+      "English": 97,
+      "History": 44,
+      "Computer": 52
+    }
+  },
+  {
+    "id": 94,
+    "name": "Kabir Khan",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 48,
+      "Science": 41,
+      "English": 80,
+      "History": 65,
+      "Computer": 80
+    }
+  },
+  {
+    "id": 95,
+    "name": "Ishaan Chopra",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 95,
+      "Science": 44,
+      "English": 72,
+      "History": 69,
+      "Computer": 75
+    }
+  },
+  {
+    "id": 96,
+    "name": "Aisha Chopra",
+    "gender": "Female",
+    "age": 15,
+    "marks": {
+      "Math": 50,
+      "Science": 47,
+      "English": 75,
+      "History": 68,
+      "Computer": 92
+    }
+  },
+  {
+    "id": 97,
+    "name": "Diya Joshi",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 90,
+      "Science": 71,
+      "English": 86,
+      "History": 51,
+      "Computer": 41
+    }
+  },
+  {
+    "id": 98,
+    "name": "Ishaan Joshi",
+    "gender": "Male",
+    "age": 16,
+    "marks": {
+      "Math": 43,
+      "Science": 50,
+      "English": 44,
+      "History": 79,
+      "Computer": 65
+    }
+  },
+  {
+    "id": 99,
+    "name": "Aarav Chopra",
+    "gender": "Male",
+    "age": 14,
+    "marks": {
+      "Math": 45,
+      "Science": 73,
+      "English": 58,
+      "History": 88,
+      "Computer": 80
+    }
+  },
+  {
+    "id": 100,
+    "name": "Aisha Gupta",
+    "gender": "Female",
+    "age": 14,
+    "marks": {
+      "Math": 51,
+      "Science": 90,
+      "English": 96,
+      "History": 94,
+      "Computer": 69
+    }
+  }
+]
