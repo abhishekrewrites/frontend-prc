@@ -11,7 +11,6 @@ function Home() {
       const parsed = JSON.parse(pastedData);
       setParsedData(parsed);
     } catch (e) {
-      console.log(e, "111");
       setErr(e.message);
     }
   };

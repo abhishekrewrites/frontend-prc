@@ -13,6 +13,9 @@ import QueueProgressBar from "./queue-progress-bar/";
 import TodoList from "./todo-list";
 import ShoppingCart from "./shopping-cart";
 import Wrapper from "./data-table/";
+import Green from "./green-reverse-grid/";
+import Clocks from "./timers/";
+import Home from "./rahul-json/";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -29,6 +32,9 @@ createRoot(document.getElementById("root")).render(
         <Route path="todo-list" element={<TodoList />} />
         <Route path="shopping" element={<ShoppingCart />} />
         <Route path="data-table" element={<Wrapper />} />
+        <Route path="green" element={<Green />} />
+        <Route path="clock" element={<Clocks />} />
+        <Route path="rahul-json" element={<Home />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>
