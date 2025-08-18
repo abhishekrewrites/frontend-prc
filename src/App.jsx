@@ -1,30 +1,36 @@
 import { useEffect, useState } from "react";
 import GridComponent from "./GridComponent";
 
-const LIMIT = 10; 
+const LIMIT = 10;
 
 function App() {
-  const [text, setText] = useState("phone"); 
+  const [text, setText] = useState("");
   const [data, setData] = useState({ products: [], total: 0 });
   const [skip, setSkip] = useState(0);
 
   useEffect(() => {
     const fetchFirstPage = async () => {
-      const resp = await fetch(`https://dummyjson.com/products/search?q=${text}&limit=${LIMIT}&skip=0`);
+      const resp = await fetch(
+        `https://dummyjson.com/products/search?q=${text}&limit=${LIMIT}&skip=0`
+      );
       const newData = await resp.json();
-      setData(newData); 
-      setSkip(0); 
+      setData(newData);
+      setSkip(0);
     };
 
-    fetchFirstPage();
-  }, [text]); 
+    if (text) {
+      fetchFirstPage();
+    }
+  }, [text]);
 
   useEffect(() => {
     if (skip > 0 && data.products.length < data.total) {
       const fetchNextPage = async () => {
-        const resp = await fetch(`https://dummyjson.com/products/search?q=${text}&limit=${LIMIT}&skip=${skip}`);
+        const resp = await fetch(
+          `https://dummyjson.com/products/search?q=${text}&limit=${LIMIT}&skip=${skip}`
+        );
         const newData = await resp.json();
-        
+
         setData((prevData) => ({
           ...newData,
           products: [...prevData.products, ...newData.products],
@@ -33,7 +39,7 @@ function App() {
 
       fetchNextPage();
     }
-  }, [skip]); 
+  }, [skip]);
 
   return (
     <main className="flex flex-col items-center gap-8 py-16 max-w-[1280px] mx-auto">

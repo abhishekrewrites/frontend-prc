@@ -16,6 +16,8 @@ import Wrapper from "./data-table/";
 import Green from "./green-reverse-grid/";
 import Clocks from "./timers/";
 import Home from "./rahul-json/";
+import ConnectFour from "./connect-4/";
+import Conn from "./conF/";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -35,6 +37,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="green" element={<Green />} />
         <Route path="clock" element={<Clocks />} />
         <Route path="rahul-json" element={<Home />} />
+        <Route path="connect" element={<ConnectFour />} />
+        <Route path="conf" element={<Conn />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>

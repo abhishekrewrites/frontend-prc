@@ -21,7 +21,7 @@ function GridComponent({ data, setSkip, limit }) {
         }
       );
 
-      if (node) {
+      if (node && observer.current) {
         observer.current.observe(node);
       }
     },
