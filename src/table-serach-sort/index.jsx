@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo } from "react";
 import data from "./data.json";
-import "./styles.css";
+// import "./styles.css";
 
 const HEADER_ITEMS = ["id", "name", "username", "email"];
 

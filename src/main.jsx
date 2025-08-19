@@ -19,6 +19,7 @@ import Home from "./rahul-json/";
 import ConnectFour from "./connect-4/";
 import Conn from "./conF/";
 import TableSearchSort from "./table-serach-sort/";
+import TicTacToe from "./tic-tac-toe/";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -41,6 +42,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="connect" element={<ConnectFour />} />
         <Route path="conf" element={<Conn />} />
         <Route path="table-search-sort" element={<TableSearchSort />} />
+        <Route path="tic-tac-toe" element={<TicTacToe />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>
