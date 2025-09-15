@@ -43,10 +43,19 @@ export const View = ({ data, setState }) => {
   };
 
   return (
-    <ul>
-      <button onClick={() => setType("folder")}>+Folder</button>
-      <button onClick={() => setType("file")}>+File</button>
-      {type && <input onChange={handleInput} type="text" />}
+    <ul className="flex">
+      <div>
+        <button onClick={() => setType("folder")}>+Folder</button>
+        <button onClick={() => setType("file")}>+File</button>
+      </div>
+
+      {type && (
+        <input
+          className="flex border border-gray-500 rounded-md"
+          onChange={handleInput}
+          type="text"
+        />
+      )}
       {type && <button onClick={handleSubmit}>Add</button>}
       {data.map((d, index) => {
         if (d.type === "file") return <File key={index} label={d.label} />;

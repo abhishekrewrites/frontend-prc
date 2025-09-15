@@ -1,90 +1,122 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const ROWS = 9;
-const COLS = 9;
-const CONNECT = 4;
+const API_URL = "https://jsonplaceholder.typicode.com/posts"; // fake REST API
 
-const P1 = 1;
-const P2 = 2;
+export default function NotesApp() {
+  const [notes, setNotes] = useState([]);
 
-function emptyBoard() {
-  return Array.from({ length: 9 }, () => Array(COLS).fill(0));
-}
+  // Load notes from localStorage on mount
+  useEffect(() => {
+    const saved = JSON.parse(localStorage.getItem("notes") || "[]");
+    setNotes(saved);
+  }, []);
 
-function getDropRow(board, row) {}
+  // Persist notes to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(notes));
+  }, [notes]);
 
-function Conn() {
-  const [board, setBoard] = useState(() => emptyBoard());
-  const [player, setPlayer] = useState(P1);
-  const [winner, setWinner] = useState(0);
-  const [winCells, setWinCells] = useState([]);
+  // Add a new note (local only)
+  const addNote = () => {
+    const newNote = {
+      id: Date.now(),
+      title: `Note ${notes.length + 1}`,
+      updatedAt: Date.now(),
+      dirty: true, // mark as unsynced
+    };
+    setNotes((prev) => [...prev, newNote]);
+  };
 
-  function drop(col) {
-    if (winner) return;
-
-    const row = getRowDrop(board, col);
-    if (row === -1) return;
-
-    const next = board.map((r) => r.slice());
-    next[row][col] = player;
-    setBoard(next);
-
-    const w = findWin();
-    if (w) {
-      setWinner(player);
-      setWinCells(w);
-      return;
+  // Push local → server
+  const pushNotes = async () => {
+    for (const note of notes) {
+      if (note.dirty) {
+        await fetch(`${API_URL}/${note.id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(note),
+        });
+        note.dirty = false; // mark synced
+      }
     }
+  };
 
-    if (next.every((r) => r.every((v) => v !== 0))) {
-      setWinner(3);
-      return;
-    }
-    setPlayer(player === P1 ? P2 : P1);
-  }
+  // Pull server → local
+  const pullNotes = async () => {
+    const res = await fetch(API_URL + "?_limit=5");
+    const serverNotes = await res.json();
+
+    const merged = [...notes];
+    serverNotes.forEach((serverNote) => {
+      const local = merged.find((n) => n.id === serverNote.id);
+      if (!local) {
+        merged.push(serverNote);
+      } else if (
+        serverNote.updatedAt &&
+        serverNote.updatedAt > local.updatedAt
+      ) {
+        Object.assign(local, serverNote);
+      }
+    });
+
+    setNotes(merged);
+  };
+
+  // Full sync: push local → server, then pull back
+  const syncNotes = async () => {
+    console.log("🔄 Sync started…");
+    await pushNotes();
+    await pullNotes();
+    console.log("✅ Sync finished");
+  };
+
+  // 👇 Sync automatically when app comes online
+  useEffect(() => {
+    const handleOnline = () => {
+      console.log("📶 Back online → syncing…");
+      syncNotes();
+    };
+    window.addEventListener("online", handleOnline);
+    return () => window.removeEventListener("online", handleOnline);
+  }, [notes]);
+
+  // 👇 Background sync every 30 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (navigator.onLine) {
+        syncNotes();
+      }
+    }, 30_000); // 30 seconds
+    return () => clearInterval(interval);
+  }, [notes]);
 
   return (
-    <div className="rounded-2xl p-3 bg-blue-900/40 border border-blue-300/20 overflow-auto">
-      <div
-        className="grid gap-1"
-        style={{ gridTemplateColumns: `repeat(${COLS}, 1fr)` }}
+    <div className="p-4">
+      <h1 className="text-xl font-bold">📝 Notes (Auto + Periodic Sync)</h1>
+      <button
+        onClick={addNote}
+        className="px-3 py-1 m-2 bg-blue-500 text-white rounded"
       >
-        {Array.from({ length: COLS }).map((_, col) => {
-          return (
-            <button key={col} onClick={(e) => drop(col)}>
-              <div
-                className="grid gap-1"
-                style={{ gridTemplateRows: `repeat(${ROWS}, 1fr)` }}
-              >
-                {Array.from({ length: ROWS }).map((_, r) => {
-                  const val = board[r][col];
-                  const isWin = winCells.some(
-                    ([wr, wc]) => wr === r && wc === col
-                  );
-                  console.log(val, "val");
-                  const colr =
-                    val === 0
-                      ? "bg-gray-600"
-                      : val === P1
-                      ? "bg-red-600"
-                      : "bg-blue-600";
-                  return (
-                    <div key={r} className="bg-blue-950 rounded p-0.5">
-                      <div
-                        className={`w-8 h-8 rounded-full ${colr} ${
-                          isWin ? "ring-4 ring-emerald-400" : ""
-                        }`}
-                      ></div>
-                    </div>
-                  );
-                })}
-              </div>
-            </button>
-          );
-        })}
-      </div>
+        Add Note
+      </button>
+      <button
+        onClick={syncNotes}
+        className="px-3 py-1 m-2 bg-green-500 text-white rounded"
+      >
+        Manual Sync
+      </button>
+
+      <ul className="mt-4">
+        {notes.map((note) => (
+          <li key={note.id} className="p-2 border-b">
+            {note.title}{" "}
+            <small>
+              ({note.dirty ? "🟥 unsynced" : "✅ synced"} at{" "}
+              {new Date(note.updatedAt).toLocaleTimeString()})
+            </small>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
-
-export default Conn;
