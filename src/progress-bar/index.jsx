@@ -1,76 +1,59 @@
 import React, { useState, useEffect, useRef } from "react";
 
 export default function Progress() {
-  const [queue, setQueue] = useState([]);
-  const [currentAnimating, setCurrentAnimating] = useState(null);
-
-  function handleClick() {
-    setQueue((q) => [...q, { id: Date.now() }]);
-  }
-
-  useEffect(() => {
-    if (currentAnimating === null && queue.length > 0) {
-      setCurrentAnimating(0);
-    }
-  }, [queue, currentAnimating]);
-
-  useEffect(() => {
-    if (currentAnimating !== null && currentAnimating < queue.length) {
-      let timer = setTimeout(() => {
-        setCurrentAnimating(currentAnimating + 1);
-      }, 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [currentAnimating, queue.length]);
+  const [bars, setBars] = useState(0);
+  const [numFilledUpBars, setNumFilledUpBars] = useState(0);
 
   return (
-    <>
-      <button onClick={handleClick}>Add Progress Bar</button>
-      <div style={{ marginTop: "1rem", marginLeft: "20px" }}>
-        {queue.map((bar, index) => {
-          const isActive = index === currentAnimating;
-          return <ProgressBar key={bar.id} animate={isActive} />;
-        })}
+    <div className="flex flex-col gap-4 justify-center">
+      <div>
+        <button
+          onClick={() => {
+            setBars(bars + 1);
+          }}
+        >
+          Add
+        </button>
       </div>
-    </>
+      <div className="flex flex-col gap-2">
+        {Array(bars)
+          .fill(null)
+          .map((_, index) => (
+            <ProgressBar
+              isEmpty={index > numFilledUpBars}
+              key={index}
+              onCompleted={() => {
+                setNumFilledUpBars(numFilledUpBars + 1);
+              }}
+            />
+          ))}
+      </div>
+    </div>
   );
 }
 
-function ProgressBar({ animate }) {
-  const [step, setStep] = useState(0);
-  const interval = useRef(null);
+function ProgressBar({ isEmpty, onCompleted }) {
+  const [startTransition, setStartTransition] = useState(false);
 
   useEffect(() => {
-    if (animate) {
-      setStep(0);
-      interval.current = setInterval(() => {
-        setStep((s) => {
-          if (s >= 5) {
-            clearInterval(interval.current);
-            return s;
-          }
-          return s + 1;
-        });
-      }, 400);
+    if (isEmpty || startTransition) {
+      return;
     }
-    return () => clearInterval(interval.current);
-  }, [animate]);
+    setStartTransition(true);
+  }, [isEmpty]);
 
   return (
-    <div
-      style={{
-        width: "300px",
-        height: "20px",
-        backgroundColor: "#e0e0e0",
-        margin: "4px 0",
-      }}
-    >
+    <div className="bg-gray-300 h-2 w-[400px]">
       <div
-        style={{
-          width: `${(step * 100) / 5}%`,
-          height: "100%",
-          backgroundColor: "blue",
-          transition: "width 400ms linear",
+        className={[
+          "bg-green-500 h-full scale-x-0 origin-left duration-[2000ms] transition-transform ease-linear",
+          startTransition && "scale-x-100",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+        onTransitionEnd={() => {
+          console.log("1111");
+          onCompleted();
         }}
       />
     </div>

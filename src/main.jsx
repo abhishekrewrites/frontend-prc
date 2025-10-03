@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
 import App from "./App.jsx";
+import StopWatch from "./stop-watch/";
 import Pagination from "./Pagination/Pagination.jsx";
 import Tree from "./Tree/Tree.jsx";
 import TreeExp from "./demo/TreeExp.jsx";
@@ -20,7 +21,7 @@ import ConnectFour from "./connect-4/";
 import Conn from "./conF/";
 import TableSearchSort from "./table-serach-sort/";
 import TicTacToe from "./tic-tac-toe/";
-//import Progress from "./progress-bar/";
+import Progress from "./progress-bar/";
 import NavigationTimer from "./palo-alto/index.jsx";
 import { PaloAltoHome } from "./palo-alto/PaloAltoHome";
 import { Settings } from "./palo-alto/Settings";
@@ -36,6 +37,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="json-viewer" element={<JsonViewer />} />
         <Route path="rahul-tree" element={<Appt />} />
         <Route path="multi-step-form" element={<Apt />} />
+        <Route path="progress" element={<Progress />} />
         <Route path="queue-progress-bar" element={<QueueProgressBar />} />
         <Route path="tree-exp" element={<TreeExp />} />
         <Route path="todo-list" element={<TodoList />} />
@@ -43,6 +45,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="data-table" element={<Wrapper />} />
         <Route path="green" element={<Green />} />
         <Route path="clock" element={<Clocks />} />
+        <Route path="stopwatch" element={<StopWatch />} />
         <Route path="rahul-json" element={<Home />} />
         <Route path="connect" element={<ConnectFour />} />
         <Route path="conf" element={<Conn />} />
